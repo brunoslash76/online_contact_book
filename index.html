@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<header>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./assets/css/_button.css">
+    <link rel="stylesheet" href="./assets/css/_inputs.css">
+    <link rel="stylesheet" href="./assets/css/_formGroup.css">
+
+    <!-- THIS MUST BE ALWAYS THE LAST STYLE TO BE LOADED -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Login</title>
+</header>
+
+<body>
+    <section class="login-form">
+        <form id="login">
+            <div class="form-group">
+
+                <label class="label-input" id="label-user" for="user">
+                    <span class="span__label-text">E-mail</span>    
+                    <input class="input" id="user" type="text" name="user" placeholder="Digite seu email">
+                </label>
+
+                <label class="label-input" id="label-password" for="password">
+                    <span class="span__label-text">Senha</span>
+                    <input class="input" id="password" type="password" name="password" placeholder="Senha">
+                </label>
+
+                <button class="btn btn-primary" type="button" id="btnSubmit">Entrar</button>
+
+            </div>
+
+            <div class="link-container">
+                <a class="signup-link" href="#" id="signup">Cadastrar</a>
+            </div>
+
+        </form>
+    </section>
+    <!-- SCRIPTS -->
+    <script src="./assets/scripts/login.ctrl.js"></script>
+</body>
+
+</html>

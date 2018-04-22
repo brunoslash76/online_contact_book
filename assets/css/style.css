@@ -1,0 +1,60 @@
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+html {
+    background-color: grey;
+    background-image: url("../imgs/Sunset_Beach.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right top;
+}
+
+body {
+    margin: 40px;
+    font-size: 16px;
+}
+
+/* FORM LOGIN STYLES */
+.login-form {
+    width: 200px;
+    height: 260px;
+    margin: 13% auto;
+    padding: 20px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.label-input {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.span__label-text {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+/* DIV STYLE WHICH CONTAINS THE LINK TO SIGN UP */
+.link-container{
+    display: flex;
+    justify-content: right;
+    align-items: baseline;
+}
+
+.signup-link {
+    font-size: 14px;
+    text-decoration: none;
+    text-align: right;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.error-msg  {
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: red;
+}
