@@ -6,8 +6,14 @@
     // Event Listener Here
     document.getElementById('btnSubmit').addEventListener('click', function () {
         let userLogin = getUserLoginData();
+        console.log(userLogin)
         if(!userLogin) {
             console.log('nao podemos enviar pro servidor')
+            return;
+        }
+
+        if (userLogin) {
+            console.log('entrou')
         }
     });
 
@@ -18,7 +24,7 @@
     // Functions here
     function getUserLoginData() {
 
-        let isValid;
+        let isValid = true;
 
         const userLogin = {
             email: document.getElementById('user-email').value,
@@ -48,11 +54,13 @@
             msgContainer = document.getElementById('label-password')
             inputName = 'Senha'
         }
+
         const template = `
             <p class="error-msg" id="error-${inputName}">
                 O campo ${inputName} precisa ser preencido
             </p>
         `;
+
         if(document.getElementById(`error-${inputName}`)) {
             return false;
         }
